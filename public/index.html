@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <script src="../js/script.js"></script>
+    <script src="script/script.js"></script>
 
     <title>Consult your zip code</title>
 </head>
@@ -28,7 +28,15 @@
             <div class="row">
                 <div class="input-field col s12">
                     <label for="cep-input">Zip code:</label>
-                    <input type="text" name="zip-code-input" id="zip-code-input" placeholder="Type your zip code here...">
+                    <input 
+                        type="text" 
+                        name="zip-code-input" 
+                        id="zip-code-input" 
+                        placeholder="Type your zip code here..." 
+                        maxlength="9" 
+                        required
+                        pattern="[0-9]+$"
+                        data-mask="00000-000">
                 </div>
             </div>
 
