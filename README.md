@@ -5,7 +5,7 @@
 <br>
 <br>
 
-## Tecnology:
+## Technology:
 
 - html
 - css
